@@ -217,12 +217,12 @@ IPC_BEGIN_MESSAGES(ViewHost)
     IPC_MESSAGE_CONTROL1(View_Host_ReturnedKeyEvent, SysMgrKeyEvent)
 
     // creates a new window (used to create PDK cards, type seems to be irrelevant)
-    // params: window key (shmget), type, width, height
-    IPC_MESSAGE_CONTROL4(ViewHost_PrepareAddWindow, int, int, int, int)
+    // params: type, width, height, window key (shmget)
+    IPC_SYNC_MESSAGE_CONTROL3_1(ViewHost_PrepareAddWindow, int, int, int, int)
 
     // creates a new window (used by WAM)
-    // params: window key (shmget), metaDataKey, type, width, height
-    IPC_MESSAGE_CONTROL5(ViewHost_PrepareAddWindowWithMetaData, int, int, int, int, int)
+    // params:  metaDataKey, type, width, height, window key (shmget)
+    IPC_SYNC_MESSAGE_CONTROL4_1(ViewHost_PrepareAddWindowWithMetaData, int, int, int, int, int)
 
     // the window is ready
     // params: window key
