@@ -16,9 +16,6 @@
 *
 * LICENSE@@@ */
 
-#ifndef SYSMGRDEVICEKEYDEFS_H
-#define SYSMGRDEVICEKEYDEFS_H
-
 enum Key {
 
     Key_Invalid        = -1,
@@ -442,4 +439,3 @@ enum VirtualKey {
     Vk_OEM_CLEAR     =0xFE //     Clear key
 };
 
-#endif // SYSMGRDEVICEKEYDEFS_H

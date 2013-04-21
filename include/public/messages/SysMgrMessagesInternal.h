@@ -14,8 +14,6 @@
  *  limitations under the License.
  */
 
-#ifndef SYSMGRMESSAGESINTERNAL_H
-#define SYSMGRMESSAGESINTERNAL_H
 
 #include <string>
 
@@ -391,5 +389,3 @@ IPC_BEGIN_MESSAGES(ViewHost)
     IPC_MESSAGE_ROUTED2(ViewHost_Card_SetAppFixedOrientation, int, bool)
 
 IPC_END_MESSAGES(ViewHost)
-
-#endif // SYSMGRMESSAGESINTERNAL_H
