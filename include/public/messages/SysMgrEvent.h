@@ -65,7 +65,7 @@ struct SysMgrEvent
 		Left        = 1 << 0,
 		Middle      = 1 << 1,
 		Right       = 1 << 2,
-		LastButton  = 1 << 31
+		LastButton  = 1u << 31
 	};
 
 	enum Modifier {
@@ -104,7 +104,7 @@ struct SysMgrEvent
 		Orientation_Right,
 		Orientation_Landscape,
 		Orientation_Portrait,
-		Orientation_Last = 1 << 31
+		Orientation_Last = 1u << 31
 	};	
 
 	enum Shake {
@@ -112,7 +112,7 @@ struct SysMgrEvent
 		Shake_Start,
 		Shake_Shaking,
 		Shake_End,
-		Shake_Last = 1 << 31
+		Shake_Last = 1u << 31
 	};
 
 	Type type;
