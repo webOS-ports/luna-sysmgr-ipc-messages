@@ -1,3 +1,13 @@
+DEPRECATED
+==========
+This repository is retired. The two headers still in use, `SysMgrEvent.h`
+and `SysMgrDeviceKeydefs.h`, now ship with
+[luna-sysmgr-common](https://github.com/webOS-ports/luna-sysmgr-common)
+and are installed under its include directory, covered by the
+`LunaSysMgrCommon` pkg-config module. Nothing should depend on
+`LunaSysMgrIpcMessages` anymore; former consumers (luna-sysmgr-common,
+luna-displaymanager, luna-appmanager, sensorfw) have been untangled.
+
 Summary
 =======
 This is the repository for public header files used by LunaSysMgrIpc, the webOS IPC library used by luna-sysmgr.
